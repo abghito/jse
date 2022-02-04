@@ -20,10 +20,11 @@ package com.example.jse.m06.s15.ex;
  * <p>
  * In the end, let the user knows who survived
  */
+
 public class Main {
     public static void main(String[] args) {
         // TODO: create actors, both warriors and wizards
-        Actor[] actors = { /* ... */ };
+        Actor[] actors = { new Warrior ("Cadavra"), new Wizard("Ava"), new Wizard("Ada"), new Wizard("da")};
 
         for (Actor actor : actors) {
             System.out.println(actor);
@@ -31,6 +32,9 @@ public class Main {
 
         System.out.println("Let's fight ...");
         for (Actor actor : actors) {
+        	for (Actor i : actors) {
+        		
+        	}
             System.out.println("Actor: " + actor);
             // ...
         }
